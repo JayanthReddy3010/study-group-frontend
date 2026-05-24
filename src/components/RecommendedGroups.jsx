@@ -17,7 +17,7 @@ function RecommendedGroups() {
     try {
 
       const res = await axios.get(
-        `http://localhost:5000/api/groups/recommend/${student.id}`
+        `https://study-group-backend-b1kf.onrender.com/api/groups/recommend/${student.id}`
       );
 
       setGroups(res.data);
