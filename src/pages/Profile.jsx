@@ -73,7 +73,7 @@ function Profile() {
   try {
 
     const res = await axios.put(
-      `http://localhost:5000/api/students/update/${student.id}`,
+      `https://study-group-backend-b1kf.onrender.com/api/students/update/${student.id}`,
       formData
     );
 
@@ -103,7 +103,7 @@ function Profile() {
   try {
 
     const res = await axios.post(
-      `http://localhost:5000/api/students/delete/${student.id}`,
+      `https://study-group-backend-b1kf.onrender.com/api/students/delete/${student.id}`,
       {
         password
       }

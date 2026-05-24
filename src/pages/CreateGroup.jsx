@@ -28,7 +28,7 @@ function CreateGroup() {
     try {
 
       await axios.post(
-        "http://localhost:5000/api/groups/create",
+        "https://study-group-backend-b1kf.onrender.com/api/groups/create",
         formData
       );
 

@@ -16,7 +16,7 @@ function Schedule() {
   const fetchSchedules = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:5000/api/schedules/${groupId}`
+        `https://study-group-backend-b1kf.onrender.com/api/schedules/${groupId}`
       );
       setSessions(res.data);
     } catch (err) {
@@ -34,7 +34,7 @@ function Schedule() {
 
     try {
       await axios.post(
-        "http://localhost:5000/api/schedules/create",
+        "https://study-group-backend-b1kf.onrender.com/api/schedules/create",
         {
           group_id: groupId,
           title: title,

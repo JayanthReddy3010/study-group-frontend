@@ -17,7 +17,7 @@ function Progress() {
     try {
 
       const res = await axios.get(
-        `http://localhost:5000/api/milestones/${groupId}`
+        `https://study-group-backend-b1kf.onrender.com/api/milestones/${groupId}`
       );
 
       setMilestones(res.data);
@@ -38,7 +38,7 @@ function Progress() {
     try {
 
       await axios.post(
-        "http://localhost:5000/api/milestones/create",
+        "https://study-group-backend-b1kf.onrender.com/api/milestones/create",
         {
           group_id: groupId,
           title,
@@ -59,7 +59,7 @@ function Progress() {
     try {
 
       await axios.put(
-        `http://localhost:5000/api/milestones/complete/${id}`
+        `https://study-group-backend-b1kf.onrender.com/api/milestones/complete/${id}`
       );
 
       fetchMilestones();

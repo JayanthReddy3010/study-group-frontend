@@ -26,7 +26,7 @@ function Groups() {
     try {
 
       const res = await axios.get(
-        "http://localhost:5000/api/groups/all"
+        "https://study-group-backend-b1kf.onrender.com/api/groups/all"
       );
 
       setGroups(res.data);
@@ -45,7 +45,7 @@ function Groups() {
     try {
 
       await axios.post(
-        "http://localhost:5000/api/groups/join",
+        "https://study-group-backend-b1kf.onrender.com/api/groups/join",
         {
           student_id: student.id,
           group_id: groupId,

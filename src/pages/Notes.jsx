@@ -23,7 +23,7 @@ function Notes() {
     try {
 
       const res = await axios.get(
-        `http://localhost:5000/api/notes/${groupId}`
+        `https://study-group-backend-b1kf.onrender.com/api/notes/${groupId}`
       );
 
       setNotes(res.data);
@@ -51,7 +51,7 @@ function Notes() {
     try {
 
       await axios.post(
-        "http://localhost:5000/api/notes/upload",
+        "https://study-group-backend-b1kf.onrender.com/api/notes/upload",
         formData
       );
 
@@ -120,7 +120,7 @@ function Notes() {
               </h2>
 
               <a
-                href={`http://localhost:5000/uploads/${note.file_url}`}
+                href={`https://study-group-backend-b1kf.onrender.com/uploads/${note.file_url}`}
                 target="_blank"
                 className="text-blue-600 mt-4 inline-block"
               >
